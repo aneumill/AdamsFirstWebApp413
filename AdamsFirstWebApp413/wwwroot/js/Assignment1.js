@@ -28,7 +28,7 @@ o_submit.addEventListener("click", function () {
     var sDisplayGrade = 0; 
     
 
-  
+  //Get variables from the dom
     iAssignmentGrade = parseFloat(document.getElementById('iAssignmentGrade').value);
     iProjectGrade = parseFloat(document.getElementById("iGroupProjectGrade").value);
     iQuizGrade = parseFloat(document.getElementById("iQuizGrade").value);
@@ -37,9 +37,9 @@ o_submit.addEventListener("click", function () {
 
     //The following IF/Statement checks to see if 
 
-
+    //Add variables
         sDisplayGrade = iAssignmentGrade + iProjectGrade + iQuizGrade + iExamGrade + iIntexGrade
-
+    //Determine the final print statement 
         if (sDisplayGrade >= 94) 
         {
             alert("Congrats you scored a " + sDisplayGrade + " which is an A.")
