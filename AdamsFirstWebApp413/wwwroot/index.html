@@ -17,7 +17,9 @@
 -->
 <html>
 <head>
+    <!-- HTML for Webpage -->
     <title>Adam Neumiller - Assignment #1</title>
+    <!--Link to Style Sheet and Icon-->
     <link href="css/StyleSheet.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/svg" href="img/favicon.svg">
 </head>
@@ -40,27 +42,29 @@
         <li>IT consulting </li>
     </ul>
     <br />
+    <!--Grade Calculator Form-->
     <h2>Grade Caluclator </h2>
-    <p>This following shows a breakdown of grade weights for IS 413. Enter your percent totals for each category based on the grade weights.  </p>
+    <p>This following shows a breakdown of grade weights for IS 413. Enter your total points earned out of 100 for each points section. The grade caluclator will then calculate your final
+    grade based on the grade weights for each category. </p>
 
     <form>
 
         <label>Assignments </label>
-        <input id="iAssignmentGrade" name="iAssignmentGrade"type="number" max="50" /><label> /50%</label> <br />
+        <input id="iAssignmentGrade" name="iAssignmentGrade"type="number" max="100" /><br />
         <label>Group Project</label>
-        <input id="iGroupProjectGrade" type="number" name="iGroupProjectGrade" max="10" /><label> /10%</label> <br />
+        <input id="iGroupProjectGrade" type="number" name="iGroupProjectGrade" max="100" /> <br />
         <label>Quizzes</label>
-        <input id="iQuizGrade" name="iQuizGrade" type="number" max="10" /><label> /10%</label><br />
+        <input id="iQuizGrade" name="iQuizGrade" type="number" max="100" /><br />
         <label>Exams</label>
-        <input id="iExamGrade" name="iExamGrade" type="number" max="20" /><label> /20%</label> <br />
+        <input id="iExamGrade" name="iExamGrade" type="number" max="100" /> <br />
         <label>INTEX </label>
-        <input id="iIntexGrade" name="IntexGrade" type="number" max="10" /><label> /10%</label>
+        <input id="iIntexGrade" name="IntexGrade" type="number" max="100" />
         <br /><br />
         <input type="button" id="calcGrade" value="Caclulate Final Grade" class="buttonstuff" />
 
     </form>
 
-
+    <!--Link to Javascript-->
     <script src="js/Assignment1.js"></script>
   
 </body>

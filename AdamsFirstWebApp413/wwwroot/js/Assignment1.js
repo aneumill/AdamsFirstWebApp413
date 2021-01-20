@@ -37,9 +37,9 @@ o_submit.addEventListener("click", function () {
 
     //The following IF/Statement checks to see if 
 
-    //Add variables
-        sDisplayGrade = iAssignmentGrade + iProjectGrade + iQuizGrade + iExamGrade + iIntexGrade
-    //Determine the final print statement 
+    //Add variables based on weights
+        sDisplayGrade = (iAssignmentGrade*.50) + (iProjectGrade*.10) + (iQuizGrade*.10) + (iExamGrade*.20) + (iIntexGrade*.10)
+    //Determine the final print statement with the if statement
         if (sDisplayGrade >= 94) 
         {
             alert("Congrats you scored a " + sDisplayGrade + " which is an A.")
