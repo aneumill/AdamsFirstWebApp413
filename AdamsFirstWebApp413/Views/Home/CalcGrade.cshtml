@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Grade Calculator";
+
+}
+
+@model AdamsFirstWebApp413.Models.CalcGradeModel
+
+<!--Grade Calculator Form-->
+
+<body>
+    <h2>Grade Caluclator </h2>
+    <p>
+        This following shows a breakdown of grade weights for IS 413. Enter your total points earned out of 100 for each points section. The grade caluclator will then calculate your final
+        grade based on the grade weights for each category.
+    </p>
+
+    <form method="post">
+
+        <label>Assignments </label>
+        <input id="iAssignmentGrade" asp-for="iAssignmentGrade" /><br />
+        <label>Group Project</label>
+        <input id="iGroupProjectGrade" asp-for="iGroupProjectGrade" max="100" /> <br />
+        <label>Quizzes</label>
+        <input id="iQuizGrade" asp-for="iQuizGrade" /><br />
+        <label>Exams</label>
+        <input id="iExamGrade" asp-for="iExamGrade" /> <br />
+        <label>INTEX </label>
+        <input id="iIntexGrade" asp-for="iIntexGrade" />
+        <br /><br />
+
+        <input type="submit" id="calcGrade" value="Caclulate Final Grade" class="buttonstuff" />
+
+        <div asp-validation-summary="All"></div>
+
+    </form>
+
+</body>
